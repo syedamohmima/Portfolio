@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome cdn for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <!-- Removed the 'A' icon -->
+                    <div class="logo-text" style="color:#007ced;">𝓜𝓸𝓱𝓶𝓲</div>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html"class="active">Blog</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Bulb Toggle for Light/Dark Theme -->
+                <div class="theme-toggle">
+                    <i id="theme-icon" class="fa-solid fa-lightbulb"></i>
+                </div>
+            </header>
+        
+
+        <!-- Hero Section -->
+        <section class="blog-hero" style="background: url('images/computer.jpg') no-repeat center center/cover;">
+            <div class="hero-text">
+                <h1>Design, Creativity, and Inspiration</h1>
+                <p>Insights on web development, UI/UX, and creative processes.</p>
+            </div>
+        </section>
+        
+        
+
+        <!-- Blog Section -->
+        <section class="blog-posts">
+            <div class="post-card" data-aos="fade-up">
+                <div class="post-image">
+                    <img src="images/blog 1-1.jpg" alt="Blog Post 1">
+                </div>
+                <div class="post-content">
+                    <h2>Minimalistic UI Design</h2>
+                    <p>How simplicity drives elegance and user engagement.</p>
+                    <a href="#" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="post-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="post-image">
+                    <img src="images/blog 2.jpg" alt="Blog Post 2">
+                </div>
+                <div class="post-content">
+                    <h2>Fluid Web Animations</h2>
+                    <p>Subtle transitions and animations that elevate user experience.</p>
+                    <a href="#" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="post-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="post-image">
+                    <img src="images/blog 3.webp" alt="Blog Post 3">
+                </div>
+                <div class="post-content">
+                    <h2>Creating User Delight</h2>
+                    <p>Design that fosters emotional connection and usability.</p>
+                    <a href="#" class="read-more-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome cdn for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <!-- Removed the 'A' icon -->
+                    <div class="logo-text" style="color:#007ced;">𝓜𝓸𝓱𝓶𝓲</div>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html"class="active">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Bulb Toggle for Light/Dark Theme -->
+                <div class="theme-toggle">
+                    <i id="theme-icon" class="fa-solid fa-lightbulb"></i>
+                </div>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/pp.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Syeda Mohmima</h1>
+                    <p>From intuitive navigation to sleek, modern designs, I focus on delivering high-quality solutions that not only meet but exceed your expectations. Explore my portfolio to see how I can transform your vision into a reality.!</p>
+
+                    <div class="btn-group">
+                        <!-- Direct link to your CV PDF file -->
+                        <a href="SYEDA MOHMIMA -CV.pdf" class="btn active" download>Download CV</a>
+                        <a href="contact.html" class="btn">Hire Me!</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Typed.js for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** Typed.js effect for rotating text in hero section **/
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+    <!-- JavaScript for Theme Toggle -->
+    <script src="script.js"></script>
+</body>
+</html>
